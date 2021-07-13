@@ -85,7 +85,7 @@ justify-content: space-around;
     Responsive media query css styles
     ---------------------------- */
 
-    /* For Moblie device */
+    /* For Moblie devices */
  @media only screen and (max-width:688px) {
     .hero-section{
       width: 100%;
@@ -93,14 +93,14 @@ justify-content: space-around;
         
     }
     .banner{
-       
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        padding: 0 15px;
+        align-items: center;
     } 
     .banner-left h1{
-        font-size:20px;
-
+        font-size: 36px;
     }
     .banner-right img{
         width: 329px;
@@ -108,3 +108,17 @@ justify-content: space-around;
     }
     
     } 
+
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+     
+
+     .banner-left h1 {
+         font-size: 36px;
+     }
+
+     .banner-right img {
+         width: 329px;
+         height: 259px;
+     }
+}
