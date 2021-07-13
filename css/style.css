@@ -18,29 +18,22 @@ body{
     --------------------------------- */
 
 .hero-section{
-background-color:#2D25A0;
-height: 674px;
-display: flex;
-justify-content: space-around;
-
+    background-color:#2D25A0;
+    height: 674px;
+    display: flex;
+    justify-content: space-around;
 }
-
-.banner{
- width: 1160px;
- display: flex;
- justify-content: space-around;
- align-items: center;
- 
+.hero-section .banner {
+    width: 1160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-
 .banner-left h1{
     color:white;
     font-size: 64px;
     font-weight: bold;
-
 }
-
 .banner-left .btn{
     color:#fff;
     text-decoration: none;
@@ -75,9 +68,63 @@ justify-content: space-around;
 
 .banner-right:hover img{
     transform: scale(1.25) ;
-     transform-origin:top right;
+    transform-origin:top right;
 }
 
+/* -----------------------------
+    Players section css styles
+    -------------------------- */
+
+ .top-players{
+    width: 1000px;
+    margin:0 auto;
+    margin-top:60px;
+ 
+ }
+.players {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-items: center;
+  
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+      
+}
+.player{
+    overflow: hidden;
+    text-align: center;
+     width:330px;
+     height: 474px;
+    padding: 10px 10px 20px 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    transition: all 0.3s ease-in-out;
+
+}
+.player:hover img{
+    transform: scale(1.25);
+}
+.player h3{
+    font-weight: bold;
+    font-size: 28px;
+    padding:10px 0;
+    text-align: start;
+    transition: all 0.3s ease-in-out;
+}
+
+.player:hover h3{
+    margin-top:10px;
+}
+.player p{
+    color: #6C6C6C;
+    width: 320px;
+    padding-bottom:10px;
+    text-align: start;
+}
 
 
 
@@ -87,6 +134,8 @@ justify-content: space-around;
 
     /* For Moblie devices */
  @media only screen and (max-width:688px) {
+
+/*--------hero section----------  */
     .hero-section{
       width: 100%;
      min-height: 695px;
@@ -106,21 +155,41 @@ justify-content: space-around;
         width: 329px;
         height: 259px;
     }
-    
+/*--------Players section----------  */
+ .top-players{
+     width: auto;
+ }
+    .players{
+        grid-template-columns:repeat(1, 1fr);
+    }
+
+
+
     } 
 
 /* Tablet devices */
 @media only screen and (min-width:688px) and (max-width:992px){
-     
+/*--------hero section----------  */
     .banner-left{
         padding: 0 10px;
     }
      .banner-left h1 {
-         font-size: 36px;
+        font-size: 36px;
      }
-
      .banner-right img {
          width: 329px;
          height: 259px;
      }
+
+
+/*--------Players section----------  */
+.top-players {
+    width: auto;
+}
+.players {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+
+}
+
 }
