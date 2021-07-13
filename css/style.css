@@ -1,0 +1,110 @@
+	/* google font links */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+
+/* ----------------------------------
+    banner section css styles
+    --------------------------------- */
+
+.hero-section{
+background-color:#2D25A0;
+height: 674px;
+display: flex;
+justify-content: space-around;
+
+}
+
+.banner{
+ width: 1160px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ 
+}
+
+
+.banner-left h1{
+    color:white;
+    font-size: 64px;
+    font-weight: bold;
+
+}
+
+.banner-left .btn{
+    color:#fff;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding:7px 10px;
+    display: inline-block;
+    margin-top:10px;
+    transition: all 0.3s ease-in-out;
+}
+.banner-left .btn .arrow{
+    transition: all 0.3s ease-out;
+}
+
+.banner-left .btn:hover{
+    color:#2D25A0;
+    font-weight: 700;
+    background-color: aqua;
+    
+}
+.banner-left .btn:hover .arrow{
+    color:#E02C6D;
+    transform: translateX(5px);
+    font-size: 20px;
+}
+
+.banner-right img{
+    width: 556px;
+    height: 438px;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+.banner-right:hover img{
+    transform: scale(1.25) ;
+     transform-origin:top right;
+}
+
+
+
+
+/* -------------------------------
+    Responsive media query css styles
+    ---------------------------- */
+
+    /* For Moblie device */
+ @media only screen and (max-width:688px) {
+    .hero-section{
+      width: 100%;
+     min-height: 695px;
+        
+    }
+    .banner{
+       
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } 
+    .banner-left h1{
+        font-size:20px;
+
+    }
+    .banner-right img{
+        width: 329px;
+        height: 259px;
+    }
+    
+    } 
