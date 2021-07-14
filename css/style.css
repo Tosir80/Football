@@ -34,7 +34,7 @@ body{
     font-size: 64px;
     font-weight: bold;
 }
-.banner-left .btn{
+.btn{
     color:#fff;
     text-decoration: none;
     background-color: #E02C6D;
@@ -43,17 +43,16 @@ body{
     margin-top:10px;
     transition: all 0.3s ease-in-out;
 }
-.banner-left .btn .arrow{
+.btn .arrow{
     transition: all 0.3s ease-out;
 }
-
-.banner-left .btn:hover{
+ .btn:hover{
     color:#2D25A0;
     font-weight: 700;
     background-color: aqua;
     
 }
-.banner-left .btn:hover .arrow{
+.btn:hover .arrow{
     color:#E02C6D;
     transform: translateX(5px);
     font-size: 20px;
@@ -88,6 +87,7 @@ body{
   
     grid-column-gap: 30px;
     grid-row-gap: 27px;
+    margin-bottom: 30px;
       
 }
 .player{
@@ -100,6 +100,7 @@ body{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .player img{
+    
     width: 300px;
     height: 256px;
     transition: all 0.3s ease-in-out;
@@ -125,8 +126,35 @@ body{
     padding-bottom:10px;
     text-align: start;
 }
+/* ----------------------------  
+    Match Highlights section 
+------------------------------*/
+.highlights{
+    width:1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:30px;
+    padding-top:30px;
+    margin:0 auto;
+}
+.left-side{
+    padding-left:20px;
+    width:500px;
+    margin-left: 15px;
+    margin: o auto;
+}
+ .highlights .left-side h1 {
+    font-size: 46px;
+}
+ .highlights .right-side {
+   
+}
+.right-side img{
 
-
+   width: 567px;
+   height: 427px;
+}
 
 /* -------------------------------
     Responsive media query css styles
@@ -163,7 +191,20 @@ body{
         grid-template-columns:repeat(1, 1fr);
     }
 
-
+/* highlights section */
+.highlights {
+    flex-direction: column;
+     margin-top:20px;
+     width: auto;
+}
+.highlights .left-side{
+    width: auto;
+    padding-bottom: 30px;
+}
+.highlights img {
+    width: auto;
+    padding-bottom: 30px;
+}
 
     } 
 
@@ -192,4 +233,14 @@ body{
 
 }
 
+/* highlights section */
+.highlights {
+    margin-top:20px;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+}
+
