@@ -194,15 +194,17 @@ body{
 /* highlights section */
 .highlights {
     flex-direction: column;
-     margin-top:20px;
      width: auto;
 }
 .highlights .left-side{
     width: auto;
-    padding-bottom: 30px;
+    margin:0;
+    padding: 0 5px 30px 5px;
+   
 }
 .highlights img {
-    width: auto;
+   width: 328px;
+   height: 248px;
     padding-bottom: 30px;
 }
 
@@ -241,6 +243,16 @@ body{
     align-items: center;
 }
 
+.highlights .left-side {
+   
+    margin: 0;
+    padding: 0 5px 30px 5px;
+
+}
+.highlights img{
+    width: auto;
+    padding-top:20px;
+}
 
 }
 
